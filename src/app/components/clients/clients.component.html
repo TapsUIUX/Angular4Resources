@@ -1,0 +1,17 @@
+<div class="row">
+<div class="col-md-6">
+<h2> <i class="fa fa-users"></i> Clients </h2>
+</div>
+<div class="col-md-6">
+<h5 class="text-right text-secondary"> total Owed :{{ totalOwed | currency: "USD" :true}}</h5>
+</div>
+</div>
+
+<!-- dumb client table componet will go here -->
+<client-table [clients]="clients"> </client-table>
+
+
+<ng-template #noClient>
+<hr>
+<h1>No clients in the Table</h1>
+</ng-template>
